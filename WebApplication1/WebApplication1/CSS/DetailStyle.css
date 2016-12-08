@@ -1,0 +1,38 @@
+﻿.all
+{
+    width:1280px;
+    margin:auto;
+    border:1px solid #e7ebeb;
+}
+.header
+{
+    text-align:center;
+    color:Blue;
+}
+.writer
+{
+    text-align:center;
+    background-color:#f6fcff;
+    border-top:solid 1px #e7ebeb;
+    border-bottom:solid 1px #e7ebeb;
+    font-size:14px;
+    height:40px;
+    line-height:40px;
+}
+.date
+{
+    text-align:right;
+    background-color:#f6fcff;
+    border-top:solid 1px #e7ebeb;
+    border-bottom:solid 1px #e7ebeb;
+    font-size:14px;
+    height:40px;
+    line-height:40px;
+    padding-right:20px;
+}
+.content
+{
+    padding:20px;
+    font-size:14px;
+    height:300px;
+}
