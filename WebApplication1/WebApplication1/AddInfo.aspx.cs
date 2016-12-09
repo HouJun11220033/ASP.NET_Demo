@@ -32,6 +32,13 @@ namespace WebApplication1
             cmd.Parameters.Add("@num", SqlDbType.NChar, 10).Value = Snum.Text;
             cmd.Parameters.Add("@age", SqlDbType.NChar, 10).Value = Sage.Text;
             cmd.Parameters.Add("@sex", SqlDbType.NChar, 10).Value = Ssex.SelectedItem.Text;
+
+            //实现文件上传
+            if (FileUpload1.HasFile)
+            {
+                FileUpload1.SaveAs("C:\\Uploads\\" + FileUpload1.FileName);
+            }
+
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
